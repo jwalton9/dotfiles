@@ -5,6 +5,7 @@ brew 'tmux'
 brew 'zsh'
 brew 'antigen'
 brew 'neovim'
+brew 'nvm'
 
 cask '1password'
 cask 'battle-net'
