@@ -36,8 +36,13 @@ Plugin 'w0rp/ale'
 call vundle#end()
 
 set number
-syntax on
 set nocompatible
+set shiftwidth=2
+set colorcolumn=80
+set cursorline
+set clipboard=unnamed
+
+syntax on
 filetype plugin indent on
 
 let g:mapleader = '\'
@@ -60,5 +65,7 @@ map <Tab> :NERDTreeToggle<CR>
 " DelimitMate Config
 
 let delimitMate_expand_cr = 1
+
+let g:dracula_colorterm = 0
 
 color dracula
