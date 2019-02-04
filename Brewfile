@@ -13,6 +13,7 @@ brew 'nvm'
 
 cask '1password'
 cask 'alacritty'
+cask 'bettertouchtool'
 cask 'discord'
 cask 'docker'
 cask 'kitematic'
