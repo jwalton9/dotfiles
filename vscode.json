@@ -1,0 +1,23 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 13,
+  "editor.fontFamily": "JetBrains Mono for Powerline",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.suggestSelection": "first",
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "git.autofetch": true,
+  "gitProjectManager.baseProjectsFolders": ["~/dev"],
+  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "gitProjectManager.ignoredFolders": [
+    "node_modules"
+  ],
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+}

@@ -11,9 +11,3 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 antigen apply
 
-export EDITOR=nvim
-alias vim="nvim"
-
-# Load NVM
-export NVM_DIR="$HOME/.nvm"
-source $(brew --prefix nvm)/nvm.sh
