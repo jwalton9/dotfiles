@@ -358,9 +358,9 @@ colors:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
- program: wsl
-#  args:
-#    - --login
+  program: wsl
+  args:
+    - tmux
 
 # Startup directory
 #

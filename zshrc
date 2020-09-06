@@ -30,8 +30,4 @@ load-nvmrc() {
 
 add-zsh-hook chpwd load-nvmrc
 
-# If not running interactively, do not do anything
-[[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
-
 alias vim="nvim"
