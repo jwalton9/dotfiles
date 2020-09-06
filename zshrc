@@ -1,13 +1,37 @@
-source /usr/local/share/antigen/antigen.zsh
+export EDITOR="vim"
 
-antigen use oh-my-zsh
+SPACESHIP_BATTERY_SHOW="false"
 
-antigen theme denysdovhan/spaceship-prompt
+source "$HOME/.zgen/zgen.zsh"
 
-antigen bundle git
-antigen bundle npm
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-autosuggestions
+if ! zgen saved; then
+  zgen oh-my-zsh
+  zgen oh-my-zsh plugins/git
+  zgen oh-my-zsh plugins/gcloud
+  zgen oh-my-zsh plugins/kubectl
 
-antigen apply
+  zgen load zsh-users/zsh-autosuggestions
+  zgen load zsh-users/zsh-completions
+  zgen load zsh-users/zsh-syntax-highlighting
 
+  zgen load denysdovhan/spaceship-prompt spaceship
+
+  zgen save
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  fi
+}
+
+add-zsh-hook chpwd load-nvmrc
+
+# If not running interactively, do not do anything
+[[ $- != *i* ]] && return
+[[ -z "$TMUX" ]] && exec tmux
+
+alias vim="nvim"
