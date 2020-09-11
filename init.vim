@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin(stdpath('data') . '/plugged')
 
 "Git
 Plug 'tpope/vim-fugitive'
@@ -7,7 +7,6 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 
 "Navigation
 Plug 'scrooloose/nerdtree'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 "Editor

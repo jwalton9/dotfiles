@@ -2,6 +2,15 @@ export EDITOR="vim"
 
 SPACESHIP_BATTERY_SHOW="false"
 
+case $(uname) in
+  Darwin*)
+    export NVM_DIR="$(brew --prefix nvm)"
+    ;;
+  *)
+    export NVM_DIR="$HOME/.nvm"
+    ;;
+esac
+
 source "$HOME/.zgen/zgen.zsh"
 
 if ! zgen saved; then
@@ -19,8 +28,7 @@ if ! zgen saved; then
   zgen save
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+source $NVM_DIR/nvm.sh  # This loads nvm
 
 load-nvmrc() {
   if [[ -f .nvmrc && -r .nvmrc ]]; then
@@ -29,5 +37,7 @@ load-nvmrc() {
 }
 
 add-zsh-hook chpwd load-nvmrc
+
+load-nvmrc
 
 alias vim="nvim"

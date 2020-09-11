@@ -1,20 +1,30 @@
 tap 'caskroom/cask'
 
-brew 'awscli'
+# Languages
 brew 'python'
+
+# Tools
 brew 'git'
+brew 'neovim'
+brew 'awscli'
+brew 'fzf'
+
+# Shell
 brew 'zsh'
-brew 'zsh-completions'
-brew 'antigen'
+brew 'tmux'
+
+# Javascript
 brew 'node'
+brew 'yarn'
 brew 'nvm'
 
 cask '1password'
+cask 'alacritty'
 cask 'discord'
 cask 'docker'
 cask 'flux'
 cask 'google-chrome'
 cask 'postman'
 cask 'slack'
-cask 'spotify'
 cask 'visual-studio-code'
+cask 'google-cloud-sdk'
