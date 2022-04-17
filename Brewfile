@@ -19,7 +19,6 @@ brew 'yarn'
 brew 'nvm'
 
 cask '1password'
-cask 'alacritty'
 cask 'discord'
 cask 'docker'
 cask 'flux'
