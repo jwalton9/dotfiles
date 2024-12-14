@@ -1,30 +1,34 @@
-tap 'caskroom/cask'
+tap "1password/tap"
+tap "aws/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 
-# Languages
-brew 'python'
+brew "asdf"
+brew "awscli"
+brew "ffmpeg"
+brew "gh"
+brew "jq"
+brew "mitmproxy"
+brew "neovim"
+brew "pyenv"
+brew "sops"
+brew "tree"
+brew "wget"
+brew "aws/tap/ec2-instance-selector"
 
-# Tools
-brew 'git'
-brew 'neovim'
-brew 'awscli'
-brew 'fzf'
-
-# Shell
-brew 'zsh'
-brew 'tmux'
-
-# Javascript
-brew 'node'
-brew 'yarn'
-brew 'nvm'
-
-cask '1password'
-cask 'alacritty'
-cask 'discord'
-cask 'docker'
-cask 'flux'
-cask 'google-chrome'
-cask 'postman'
-cask 'slack'
-cask 'visual-studio-code'
-cask 'google-cloud-sdk'
+cask "1password"
+cask "1password-cli"
+cask "chatgpt"
+cask "docker"
+cask "figma"
+cask "font-fira-code"
+cask "linear-linear"
+cask "notion"
+cask "plex"
+cask "raspberry-pi-imager"
+cask "raycast"
+cask "session-manager-plugin"
+cask "slack"
+cask "tableplus"
+cask "wezterm"
